@@ -1,0 +1,299 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+	margin:0; 
+	padding:0;
+}
+ul,li,ol{
+	list-style:none;
+}
+img,fieldset{
+	border:0; 
+}
+img{
+	display:block;
+}
+a{
+	text-decoration:none; color:#333;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:100;
+}
+body{
+	 font-family:"微软雅黑";
+}
+input,a{
+	outline:none;
+}
+.headerW{
+	background-color:#f2f2f2;
+	height:27px;
+	width: 100%;
+	line-height: 27px;
+	font-size: 12px;
+	color:#a1a1a1;
+	
+}
+ a{
+	color:#a1a1a1
+}
+ a:hover{
+	color:red;
+}
+.header{
+	height:30px;
+	width:1200px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerWel a{
+	
+}
+.headerRight .account{
+	width:90px;
+	/*background:url(../img/maxmain.png) no-repeat  ;
+	background-position-x: -236px;*/
+}
+/*.headerRight .shop{
+	width:70px;
+}
+.shop .cart-icon{
+	width:20px;
+	background:url(../img/maxmain.png) no-repeat;
+	background-position-x: -236px;
+}*/
+
+
+/*top*/
+
+.topW{
+	height:97px;
+	width:100%;
+	background-color: #fff;
+}
+.top{
+	height:97px;
+	width:1200px;
+	margin:0 auto;
+}
+.logo{
+	width:450px;
+	height:97px;
+	line-height: 97px;
+	float: left;
+}
+.logo img{
+	padding-top: 18px;
+}
+
+.searchW{
+	width: 374px;
+	height:63px;
+    float: left;
+    margin-top: 18px;
+    padding-left: 110px;
+    margin-bottom: 5px;
+}
+.search{
+	width:367px;
+	float: left;
+	border:3px solid #861185;
+}
+.inputstyle{
+	width: 304px;
+	height:32px;
+	border: 0;
+	line-height:32px ;
+	font-size: 14px;
+	color:#a1a1a1 ;
+}
+.btn_search{
+	float:right;
+	width:57px;
+	height:34px;
+	border:3px solid #861185;
+	background: url(../img/search.jpg) no-repeat center;
+	cursor: pointer;
+}
+.searchW .key {
+	color:#a1a1a1;
+	font-size: 13px;
+}
+.top_right{
+	float:right;
+	width: 160px;
+    height: 31px;
+    margin-top: 23px;  
+}
+.card-container{
+	padding: 0 5px 0 38px;
+    height: 31px;
+    line-height: 31px;
+    display: block;
+    color: #494949;
+    font-size: 12px;
+    background: url(../img/maxmain.png);
+}
+/*菜单*/
+.navW{
+	width:100%;
+	height:35px;
+	border-bottom: 3px solid #861185;
+	
+}
+.nav{
+	width:1200px;
+	height:35px;
+	margin: 0 auto;
+	/*background-color: red;*/
+}
+.navDrop{
+	width: 195px;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    color:#fff;
+    font-size: 14px;
+    background-color: #000000;
+   	text-indent: 15px;
+   	cursor: pointer;
+}
+.navDrop .cart-icon{
+	height: 13px;
+	font-weight: 100;
+    width: 11px;
+    display: inline-block;
+    background-color: red;
+    background: url(../img/maxmain.png) no-repeat 0 -61px;
+}
+.navMenu{
+	width: 1002px;
+    height: 35px;
+}
+.navMenuList{
+	display: flex;
+}
+.navMenuList li a{
+	font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 35px;
+    height: 35px;
+    width: 100px;
+    color:#000000;
+    font-weight: 900;
+    text-align: center;
+}
+.navMenuList li a:hover{
+	background-color: #e40c57;
+	color:#fff;
+}
+
+.siginW{
+	position: relative;
+	
+}
+.sigin_logo{
+	width:1200px;
+	height:376px;
+	margin:0 auto;
+	margin-bottom: 60px;
+	
+	background: url(../img/maxlogo.jpg) no-repeat 0 center;
+}
+.sigin{
+	width:340px;
+	height: 360px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	position: absolute;
+	top:0;
+	
+	margin-left:980px ;
+}
+.sigin_title{
+	height:44px;
+	line-height: 44px;;
+	border-bottom: 1px solid #ccc;
+	text-indent: 20px;
+	color:#1566c0;
+}
+.formW input{
+	height:30px;
+	width:298px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.sigin_trust{
+	width:340px;
+	height:32px;
+	line-height: 32px;
+	display: flex;
+	justify-content: center;
+	margin-top:15px;
+}
+.sigin_trust a{
+	margin-left:8px;
+	cursor: pointer;
+}
+.sigin_btn{
+	border:0;
+	height:35px;
+	width:80px;
+	background-color:#861185;
+	line-height: 35px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.sigin_btn:hover{
+	background-color:#e40c57 ;
+}
+.form_act{
+	margin-top:20px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.form_buttom{
+	height: 35px;
+	line-height: 35px;
+	background-color: #efefef;
+	margin-top: 26px;
+	font-size: 12px;
+	text-indent: 200px;
+	
+}
+.form_buttom a{
+	color:#000;
+}
+.form_buttom b{
+	border:1px solid #CCCCCC;
+	background-color: #fff;
+	font-weight: 100;
+	margin-left: 5px;
+}
+.form_buttom b:hover{
+	background-color: #efefef;
+	color: #e40c57;
+}
+
+.footerW{
+	border-top: 5px solid #560155;
+    background-color: #861185;
+    color: #ffffff;
+}
+.footer{
+	width: 1198px;
+	height:162px;
+   	margin: 10px auto 0px auto;
+    background-color: red;
+    display: flex;
+}
+
+.footer_text{
+	height: 300px;
+}
