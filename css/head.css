@@ -30,7 +30,6 @@ input,a{
 	line-height: 27px;
 	font-size: 12px;
 	color:#a1a1a1;
-	
 }
  a{
 	color:#a1a1a1
@@ -45,24 +44,29 @@ input,a{
 	display: flex;
 	justify-content: space-between;
 }
-
-.headerWel a{
-	
+.headerRight_list{
+	display: flex;
 }
 .headerRight .account{
+	text-indent: 15px;
 	width:90px;
-	/*background:url(../img/maxmain.png) no-repeat  ;
-	background-position-x: -236px;*/
+	background: url(../img/maxmain.png) no-repeat -170px 10px;
+	position: relative;
 }
-/*.headerRight .shop{
-	width:70px;
+.account:hover .headerRight_listNone{
+	display: block;
+	position: absolute;
 }
-.shop .cart-icon{
-	width:20px;
-	background:url(../img/maxmain.png) no-repeat;
-	background-position-x: -236px;
-}*/
-
+.headerRight_listNone{
+	background: #fff;
+	width:90px;
+	display: none;
+}
+.headerRight .card{
+	width: 80px;
+	text-indent: 18px;
+	background:url(../img/maxmain.png) no-repeat -272px 5px;
+}
 
 /*top*/
 
@@ -157,6 +161,7 @@ input,a{
     background-color: #000000;
    	text-indent: 15px;
    	cursor: pointer;
+   	position:relative;
 }
 .navDrop .cart-icon{
 	height: 13px;
@@ -165,6 +170,9 @@ input,a{
     display: inline-block;
     background-color: red;
     background: url(../img/maxmain.png) no-repeat 0 -61px;
+}
+.hf{
+	position:absolute;
 }
 .navMenu{
 	width: 1002px;
@@ -187,113 +195,4 @@ input,a{
 .navMenuList li a:hover{
 	background-color: #e40c57;
 	color:#fff;
-}
-
-.siginW{
-	position: relative;
-	
-}
-.sigin_logo{
-	width:1200px;
-	height:376px;
-	margin:0 auto;
-	margin-bottom: 60px;
-	
-	background: url(../img/maxlogo.jpg) no-repeat 0 center;
-}
-.sigin{
-	width:340px;
-	height: 360px;
-	background-color: #fff;
-	border: 2px solid #ccc;
-	position: absolute;
-	top:0;
-	
-	margin-left:980px ;
-}
-.sigin_title{
-	height:44px;
-	line-height: 44px;;
-	border-bottom: 1px solid #ccc;
-	text-indent: 20px;
-	color:#1566c0;
-}
-.formW input{
-	height:30px;
-	width:298px;
-	margin-left: 20px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	line-height: 30px;
-	font-size: 14px;
-}
-.sigin_trust{
-	width:340px;
-	height:32px;
-	line-height: 32px;
-	display: flex;
-	justify-content: center;
-	margin-top:15px;
-}
-.sigin_trust a{
-	margin-left:8px;
-	cursor: pointer;
-}
-.sigin_btn{
-	border:0;
-	height:35px;
-	width:80px;
-	background-color:#861185;
-	line-height: 35px;
-	color: #fff;
-	font-size: 14px;
-	margin-left: 20px;
-	cursor: pointer;
-}
-.sigin_btn:hover{
-	background-color:#e40c57 ;
-}
-.form_act{
-	margin-top:20px;
-	font-size: 14px;
-	margin-left: 20px;
-}
-.form_buttom{
-	height: 35px;
-	line-height: 35px;
-	background-color: #efefef;
-	margin-top: 26px;
-	font-size: 12px;
-	text-indent: 200px;
-	
-}
-.form_buttom a{
-	color:#000;
-}
-.form_buttom b{
-	border:1px solid #CCCCCC;
-	background-color: #fff;
-	font-weight: 100;
-	margin-left: 5px;
-}
-.form_buttom b:hover{
-	background-color: #efefef;
-	color: #e40c57;
-}
-
-.footerW{
-	border-top: 5px solid #560155;
-    background-color: #861185;
-    color: #ffffff;
-}
-.footer{
-	width: 1198px;
-	height:162px;
-   	margin: 10px auto 0px auto;
-    background-color: red;
-    display: flex;
-}
-
-.footer_text{
-	height: 300px;
 }

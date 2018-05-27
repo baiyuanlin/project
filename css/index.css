@@ -1,0 +1,164 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+	margin:0; 
+	padding:0;
+}
+ul,li,ol{
+	list-style:none;
+}
+img,fieldset{
+	border:0; 
+}
+img{
+	display:block;
+}
+a{
+	text-decoration:none; color:#333;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:100;
+}
+body{
+	 font-family:"微软雅黑";
+}
+input,a{
+	outline:none;
+}
+.warp{
+	width:100%;
+	height:100%;
+	
+}
+.banner{
+			
+	margin-top: -5px;
+}
+#box{
+	
+	width:100%;
+	height:400px;
+	position:relative;
+	
+}
+ .content li{
+ 	width:100%;
+ 	height:400px;
+	cursor: pointer;
+	position:absolute;
+}
+
+ /*.content .list1{
+ 	width:100%;
+ 	background: url(../img/lunbo1.jpg) no-repeat top center;
+ }	
+  .content .list2{
+ 	width:100%;
+ 	background: url(../img/lunbo2.jpg) no-repeat top center;
+ }	
+  .content .list3{
+ 	width:100%;
+ 	background: url(../img/lunbo3.jpg) no-repeat top center;
+ }	*/
+#carousel .nums{
+	list-style: none;
+	position:absolute;
+	top:370px;
+	left:50%;
+}
+.nums .num{
+	float:left;
+	width:15px;
+	height:15px;
+	background-color: #000;			
+	border-radius: 100%;
+	text-align:center;
+	margin-left:10px;
+	cursor: pointer;
+}
+.nums .bg{
+	background-color: #1566C0;
+}
+.prow{
+	width:100%;
+	margin: 10px auto auto auto
+	
+}
+.prowPic{
+	width:75px;
+	width:1200px;
+	margin:0 auto;
+}
+.pics{
+	display: flex;
+}
+.pics li{
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+.pics .list4{
+	border-right:0;
+}
+.lklist{
+	width:100%;
+	
+	
+}
+.items{
+	position:relative;
+	width:1200px;
+	height: 330px;
+	margin:0 auto;
+}
+.item1W{
+	position: relative;
+    float: left;
+    width: 200px;
+    padding-left: 30px;
+    
+    text-align: left;
+    line-height: normal
+}
+.item1 {
+	float:left;
+    width: 240px;
+	
+}
+.item1Text{
+	width: 150px;
+    padding: 0 40px;
+    text-align: center;
+    font-style: normal
+}
+.item1Text p{
+	font-size: 12px;
+}
+.item1Text a{
+	display: block;
+    max-height: 32px;
+    overflow: hidden;
+    line-height: 16px;
+    margin-bottom: 5px;
+    color: #969495;
+    font-size: 13px;
+}
+.item1Text span em{
+	font-style: normal;
+	color:red;
+}
+.prev{
+    position: absolute;
+    bottom: 120px;
+    left: 7px;
+    width: 29px;
+    height: 58px;
+    background: url(../img/maxmain.png) no-repeat 0px -313px;
+    z-index: 3;
+}
+.next{
+    position: absolute;
+    bottom: 120px;
+    right: 7px;
+    width: 29px;
+    height: 58px;
+    background: url(../img/maxmain.png) no-repeat 0px -370px;
+    z-index: 3;
+}

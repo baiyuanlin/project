@@ -1,0 +1,150 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+	margin:0; 
+	padding:0;
+}
+ul,li,ol{
+	list-style:none;
+}
+img,fieldset{
+	border:0; 
+}
+img{
+	display:block;
+}
+a{
+	text-decoration:none; color:#333;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:100;
+}
+body{
+	 font-family:"微软雅黑";
+}
+input,a{
+	outline:none;
+}
+.mainW{
+	margin-top:-5px;
+	width:100%;
+}
+.main{
+	width:1200px;
+	height:470px;
+	margin:0 auto;
+	display: flex;
+}
+.main_left{
+	
+	width:650px;
+	height:450px;
+	border: 2px solid #ccc;
+	background-color: #fff;
+}
+.main_left h2{
+	text-indent: 20px;
+	height:44px;
+	line-height: 44px;
+	border-bottom: 1px solid #ccc;
+}
+.tipText{
+	display: block;
+	color:red;
+	position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+   	margin-left: 146px;
+   font-size: 12px;
+   
+}
+#code{
+	display: inline-block;
+    width: 100px;
+    height: 30px;
+    vertical-align: middle;
+    background-color: #861185;
+    font-size: 20px;
+    color: #fff;
+    text-align:center;
+    line-height: 30px;
+    cursor:pointer;
+}
+.main_left p{
+	height:51px;
+	margin-top: 15px;
+	position:relative;
+	
+}
+.main_left p:last-child{
+	margin-left: 145px;
+	margin-top: 15px;
+}
+.main_left .yzm{
+	font-size: 16px;
+	letter-spacing: 4px;
+	width:100px;
+	height: 30px;
+	line-height: 30px;
+}
+.main_left em{
+	font-style: normal;
+	color:red;
+}
+.form-label{
+	margin-top: 15px;
+	width:145px;
+	height:32px;
+	display: inline-block;
+	text-align: right;	
+}
+.xz{
+	margin-left: 145px;
+}
+.form_input{
+	letter-spacing: 3px;
+	width: 288px;
+    height: 26px;
+    line-height: 26px;
+    padding: 1px 
+}
+.signup_btn{
+	border: 0;
+    height: 35px;
+    width: 80px;
+    background-color: #861185;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.signup_btn:hover{
+	background-color: red;
+}
+.sigin_trust{
+	height:32px;
+	line-height: 32px;
+	display: flex;
+	justify-content:center;
+	margin-top:15px;
+	justify-content: center;
+}
+.sigin_trust a{
+	margin-left:8px;
+	cursor: pointer;
+}
+.main_right{
+	height:454px;
+	width: 580px;
+	line-height: 454px;
+	padding-left: 40px;
+}
+.descrip{
+	font-size: 14px;
+    line-height: 40px;
+}
+.main_right .btn{
+	background-color: #861185;
+	color:#fff;
+	height:40px;
+	
+}
