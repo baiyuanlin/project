@@ -47,7 +47,7 @@
 		 				<p><label for="" class="form-label">
 		 					<em class="warn">*</em>验证码：
 		 					</label>
-		 					<input class="yzm"type="text" name=""  value="" placeholder="填写验证码"/>
+		 					<input class="yzm"type="text" name="" id="codeOk" value="" onblur="checkCodeOk()" placeholder="填写验证码"/>
 		 					<span id="code">
 		 						
 		 					</span>
@@ -140,18 +140,19 @@
       			}	 
     		}
 			// 	验证码
-
+			var str1 =""
 			function code(){
 				var code = document.getElementById("code")
 				var str="qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPLKJHGFDSAZXCVBNM";
-				var str1=0;
-				for(var i=0; i<4;i++){
+				
+				for(var i=0; i<5;i++){
 					str1+=str.charAt(Math.floor(Math.random()*62)) 
 				}
 				str1=str1.substring(1)
 				code.innerHTML = (str1);
 			}
 			code();
+			
 			//验证码刷新	
 			function load (){
 				var codeLoad = document.getElementById("code");
@@ -159,7 +160,7 @@
 					function code(){
 					var code = document.getElementById("code")
 					var str="qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPLKJHGFDSAZXCVBNM";
-					var str1=0;
+					 str1=0;
 					for(var i=0; i<4;i++){
 						str1+=str.charAt(Math.floor(Math.random()*62)) 
 					}
@@ -170,9 +171,19 @@
 			}
 		}
 		load();
+		console.log(str1)
 		//验证验证码
-		function codeOk(){
-			var code = document.getElementById("code");
+		function checkCodeOk(){
+			var codeValue = document.getElementById("codeOk").value;
+			var codeValueOk = str1;
+			if(codeValue.length==0){
+		 			TipText[3].innerHTML="";
+		 			return false;
+		 		}
+			if(codeValue != codeValueOk){
+				TipText[3].innerHTML="验证码错误";
+			}
+			
 			
 		}
 		 </script>

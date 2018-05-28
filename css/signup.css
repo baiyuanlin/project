@@ -29,14 +29,13 @@ input,a{
 }
 .main{
 	width:1200px;
-	height:470px;
+	height:510px;
 	margin:0 auto;
 	display: flex;
 }
 .main_left{
-	
 	width:650px;
-	height:450px;
+	height:490px;
 	border: 2px solid #ccc;
 	background-color: #fff;
 }
@@ -72,7 +71,6 @@ input,a{
 	height:51px;
 	margin-top: 15px;
 	position:relative;
-	
 }
 .main_left p:last-child{
 	margin-left: 145px;
@@ -97,6 +95,7 @@ input,a{
 	text-align: right;	
 }
 .xz{
+	margin-top: 30px;
 	margin-left: 145px;
 }
 .form_input{
@@ -146,5 +145,4 @@ input,a{
 	background-color: #861185;
 	color:#fff;
 	height:40px;
-	
 }

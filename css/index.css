@@ -28,16 +28,15 @@ input,a{
 	height:100%;
 	
 }
-.banner{
-			
+.banner{		
 	margin-top: -5px;
+	position:relative;
 }
 #box{
 	
 	width:100%;
 	height:400px;
 	position:relative;
-	
 }
  .content li{
  	width:100%;
@@ -45,19 +44,6 @@ input,a{
 	cursor: pointer;
 	position:absolute;
 }
-
- /*.content .list1{
- 	width:100%;
- 	background: url(../img/lunbo1.jpg) no-repeat top center;
- }	
-  .content .list2{
- 	width:100%;
- 	background: url(../img/lunbo2.jpg) no-repeat top center;
- }	
-  .content .list3{
- 	width:100%;
- 	background: url(../img/lunbo3.jpg) no-repeat top center;
- }	*/
 #carousel .nums{
 	list-style: none;
 	position:absolute;
@@ -76,6 +62,107 @@ input,a{
 }
 .nums .bg{
 	background-color: #1566C0;
+}
+.drow-down-list-wrap{
+	width:1200px;
+	margin:0 auto;
+}
+.drow-down-list{
+	position:absolute;
+	top:0;
+}
+
+.drow-down-list h3{
+	padding: 10px 0 0 8px;
+    font-size:14px;
+    color: #e973e8;
+    cursor: pointer;
+    font-weight: 900;
+    background-color:#861185;
+}
+.drow-down-list ul{
+	border-bottom: 1px solid #9c1ba0;
+	width:195px;
+	height:98px;
+	background-color:#861185;
+}
+.drow-down-list ul li{
+	float:left;
+	padding-left:8px;
+    line-height: 16px;
+    font-size: 12px;
+    padding-bottom: 4px;
+}
+.drow-down-list ul li a{
+	color:#fff;
+}
+.drow-down-list ul h3:hover{
+	background-color: #710b70;
+}
+.drow-down-list ul:hover{
+	background-color: #710b70;
+}
+.drow-down-list ul li a:hover{
+	color:#e973e8;	
+}
+.shin-children-wrap{
+	background-color: #fff;
+    margin: 0px 10px 10px 0;
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+.shin-children{
+	background-color: #fff;
+	opacity: .8;
+	position:absolute;
+	top:0;
+	left:290px;
+    margin: 0 17px;
+    height: 398px;
+    width:245px;
+}
+.shin-children ul{
+	height:90px;
+	border-bottom: 1px dotted #c8c8c8;
+}
+.shin-children ul h3{
+	padding: 10px 0 0 8px;
+    font-size:14px;
+}
+.shin-children ul li{
+	float:left;
+    padding-left:8px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 4px 0 4px 0px;
+}
+.shin-children ul li a{
+	margin-left: 4px;
+}
+.shin-children-m {
+	border-left: 1px dotted #c8c8c8;
+	background-color: #fff;
+	opacity: .8;
+	position: absolute;
+	top:0;
+	left:535px;
+	margin: 0 17px;
+    height: 398px;
+    width:245px;
+}
+.shin-children-m h3{
+	border-bottom: 1px dotted #c8c8c8;
+	padding: 10px 0 0 8px;
+    font-size:14px;
+}
+.shin-children-m ul li{
+	float:left;
+	padding-left:8px;
+    line-height: 16px;
+    font-size: 12px;
+    margin-top: 6px;
+    padding-bottom: 4px;
 }
 .prow{
 	width:100%;
@@ -161,4 +248,384 @@ input,a{
     height: 58px;
     background: url(../img/maxmain.png) no-repeat 0px -370px;
     z-index: 3;
+}
+.hot-brand-wrap{
+	margin-top:40px;
+	width:100%;	
+	height:520px;
+	
+}
+.hot-brand-top{
+	border-bottom:2px solid black;
+	width:1200px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+}
+.hot-brand-top1{
+	float:left;
+}
+.hot-brand-wz p span{
+	font-size: 24px;
+	color:black;
+}
+ .hot-brand-wz p strong{
+	font-size: 22px;
+    color: #c4c4c4;
+    font-weight: 100;
+}
+.hot-brand-top2{
+	float: left;
+	padding-left: 50px;
+}
+.hot-brand-top2 ul li{
+	float: left;
+    width: 72px;
+    height:32px;
+    line-height: 32px;
+    font-size: 12px;
+    color:#CECECE;
+    text-align: center;
+    cursor: pointer;	
+}
+.hot-brand-top2 ul li:hover{
+	color:black;
+	font-weight: 900;
+}
+.hot-brand-top3{
+	float:right;
+}
+.hot-brand-top3 ul li{
+	float:left;
+	height:32px;
+    line-height: 32px;
+    font-size:12px;
+	clolr:#949494;
+	
+}
+.hot-brand-top3 ul li a{
+	font-size:12px;
+	clolr:#949494;
+}
+.hot-brand-pics-wrap{
+	width:100%;
+	height:100%;
+}
+.hot-brand-pics{
+	margin-top:10px;
+	width:100%;
+}
+.hot-brand-pics1, .hot-brand-pics2{
+	width:1200px;
+	margin:0 auto;
+}
+.hot-brand-pics1 ul li{
+	float:left;
+	border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+}
+.hot-brand-pics2 ul li{
+	width: 124px;
+    height: 64px;
+    border: 1px solid #e9e9e9;
+    vertical-align: middle;
+    margin: 8px 7px 0 0;
+    float: left;
+}
+
+.small-sample-wrap{
+	width:100%;
+	height:629px;
+	margin-top: 40px;
+	margin-bottom:80px ;	
+}
+.small-sample-top{
+	width:1200px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	border-bottom:2px solid red;
+}
+.small-sample-top-left{
+	float:left;	
+}
+.small-sample-wz p{
+	font-size: 24px;
+	color:red;
+}
+.small-sample-wz p strong{
+	font-size: 22px;
+    color: #c4c4c4;
+    font-weight: 100;
+}
+.small-sample-top-right{
+	float:right;
+}
+.small-sample-top-right ul li{
+	float:left;
+	height:32px;
+    line-height: 32px;
+	font-size:12px;
+	clolr:#949494;
+}
+.small-sample-pics{
+	width:1200px;
+	margin: 0 auto;
+	
+}
+.small-sample-pic1{
+	margin-top: 10px;
+	display: flex;
+}
+.small-sample-piclunbo{
+	position:relative;
+}
+.small-sample-item1 {
+	width:1200px;
+	margin: auto 0;
+	
+}
+.small-sample-item1 ul li{
+	width: 240px;
+    height: 160px;
+	float: left;
+}
+
+.small-lunbo-prev{
+    position: absolute;
+    bottom: -130px;
+    left: 7px;
+    width: 29px;
+    height: 58px;
+    background: url(../img/maxmain.png) no-repeat 0px -313px;
+    z-index: 3;
+}
+.small-lunbo-next{
+    position: absolute;
+    bottom: -130px;
+    right: 7px;
+    width: 29px;
+    height: 58px;
+    background: url(../img/maxmain.png) no-repeat 0px -370px;
+    z-index: 3;
+}
+.gift-set-wrap{
+	width:100%;
+	height:629px;
+	margin-top: 40px;
+	margin-bottom:80px ;	
+}
+.gift-set-top{
+	width:1200px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	border-bottom:2px solid #3cb38d;
+}
+.gift-set-left{
+	float:left;	
+}
+.gift-set-wz p span{
+	font-size:24px;
+	color:#3cb38d;
+}
+.gift-set-wz p strong{
+	font-size: 22px;
+    color: #c4c4c4;
+    font-weight: 100;
+}
+.dior-wrap{
+	width:100%;
+	margin-bottom:40px
+}
+.dior{
+	width:1200px;
+	margin:0 auto;
+}
+.skin-care-wrap{
+	width:100%;
+	height: 476px;
+}
+.skin-care-top{
+	width:1200px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	border-bottom:2px solid #ec4882;
+	margin-bottom: 10px;
+}
+.skin-care-left{
+	float:left;	
+}
+.skin-care-wz p span{
+	font-size:24px;
+	color:#ec4882;
+}
+.skin-care-wz p strong{
+	font-size: 22px;
+    color: #c4c4c4;
+    font-weight: 100;
+}
+.shin-care-pics{
+	margin-top:10px;
+	width:1200px;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+.shin-care-slide{
+	width:340px;
+	height:435px;
+	position:relative;
+	float:left
+}
+.shin-care-lunbo li{
+	position: absolute;
+}
+.shin-care-lunbo-nums{
+	position:absolute;
+	top:410px;
+	left:50%;
+	margin-left:-35px;
+}
+.shin-care-lunbo-nums .shin-care-bg{
+	background-color: #ea4589;
+}
+.shin-care-num{
+	width:20px;
+	height:5px;
+	margin-left: 3px;
+	background-color: #fff;
+	float:left;
+}
+.shin-care-two-pic{
+	float: left;
+	
+}
+.shin-care-two-pic .img1{
+	display:block;
+	border-bottom: 1px dotted black;
+}
+.lebor{
+	margin-right: 5px;
+	border-left: 1px dotted black;
+}
+.one-pic{
+	float:left;
+	margin-right:5px;
+}
+
+
+.fashion-makeup-wrap{
+	margin-top: 40px;
+	width:100%;
+	height:476px;
+}
+.fashion-makeup-top{
+	width:1200px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	border-bottom:2px solid #8a5bab;;
+	margin-bottom: 10px;
+}
+.fashion-makeup-pics{
+	margin-top:10px;
+	width:1200px;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+.fashion-makeup-slide{
+	width:340px;
+	height:435px;
+	position:relative;
+	float:left
+}
+.fashion-makeup-lunbo li{
+	position: absolute;
+}
+.fashion-makeup-lunbo-nums{
+	position:absolute;
+	top:410px;
+	left:50%;
+	margin-left:-35px;
+}
+.fashion-makeup-lunbo-nums .fashion-makeup-bg{
+	background-color: #ea4589;
+}
+.fashion-makeup-num{
+	width:20px;
+	height:5px;
+	margin-left: 3px;
+	background-color: #fff;
+	float:left;
+}
+.fashion-makeup-wz p span{
+	font-size:24px;
+	color:#8a5bab;;
+}
+.fashion-makeup-wz p strong{
+	font-size: 22px;
+    color: #c4c4c4;
+    font-weight: 100;
+}
+
+
+.bady-fragrance-wrap{
+	margin-top: 40px;
+	width:100%;
+	height:476px;
+	margin-bottom: 20px;
+}
+.bady-fragrance-top{
+	width:1200px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	border-bottom:2px solid #e67936;
+	margin-bottom: 10px;
+}
+.bady-fragrance-pics{
+	margin-top:10px;
+	width:1200px;
+	margin:0 auto;
+	margin-bottom: 40px;
+}
+.bady-fragrance-slide{
+	width:340px;
+	height:435px;
+	position:relative;
+	float:left
+}
+.bady-fragrance-lunbo li{
+	position: absolute;
+}
+.bady-fragrance-lunbo-nums{
+	position:absolute;
+	top:410px;
+	left:50%;
+	margin-left:-35px;
+}
+.bady-fragrance-lunbo-nums .bady-fragrance-bg{
+	background-color: #ea4589;
+}
+.bady-fragrance-num{
+	width:20px;
+	height:5px;
+	margin-left: 3px;
+	background-color: #fff;
+	float:left;
+}
+.bady-fragrance-left{
+	float:left;	
+}
+.bady-fragrance-wz p span{
+	font-size:24px;
+	color:#e67936;
+}
+.bady-fragrance-wz p strong{
+	font-size: 22px;
+    color: #c4c4c4;
+    font-weight: 100;
 }
