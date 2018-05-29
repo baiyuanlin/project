@@ -1,4 +1,4 @@
-body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,.siginW,.sigin_logo,.sigin{
 	margin:0; 
 	padding:0;
 }
@@ -59,19 +59,32 @@ input,a{
 	line-height: 30px;
 	font-size: 14px;
 }
+.formW p{
+	position:relative;
+}
 .sigin_trust{
 	width:340px;
 	height:32px;
 	line-height: 32px;
 	display: flex;
-	justify-content: center;
+	justify-content:center;
 	margin-top:15px;
+}
+.tipText{
+	display: block;
+	color:red;
+	position: absolute;
+    margin-top: -15px;
+    font-size: 14px;
+   	margin-left: 20px;
+   font-size: 12px;
+   
 }
 .sigin_trust a{
 	margin-left:8px;
 	cursor: pointer;
 }
-.sigin_btn{
+#login_btn{
 	border:0;
 	height:35px;
 	width:80px;
@@ -82,7 +95,7 @@ input,a{
 	margin-left: 20px;
 	cursor: pointer;
 }
-.sigin_btn:hover{
+#login_btn:hover{
 	background-color:#e40c57 ;
 }
 .form_act{

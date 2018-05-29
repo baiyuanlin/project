@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, .siginW, .sigin_logo, .sigin {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+.siginW {
+  position: relative; }
+
+.sigin_logo {
+  width: 1200px;
+  height: 376px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background: url(../img/maxlogo.jpg) no-repeat 0 center; }
+
+.sigin {
+  width: 340px;
+  height: 360px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  position: absolute;
+  top: 0;
+  margin-left: 980px; }
+
+.sigin_title {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+  text-indent: 20px;
+  color: #1566c0; }
+
+.formW input {
+  height: 30px;
+  width: 298px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 14px; }
+
+.formW p {
+  position: relative; }
+
+.sigin_trust {
+  width: 340px;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+
+.tipText {
+  display: block;
+  color: red;
+  position: absolute;
+  margin-top: -15px;
+  font-size: 14px;
+  margin-left: 20px;
+  font-size: 12px; }
+
+.sigin_trust a {
+  margin-left: 8px;
+  cursor: pointer; }
+
+#login_btn {
+  border: 0;
+  height: 35px;
+  width: 80px;
+  background-color: #861185;
+  line-height: 35px;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 20px;
+  cursor: pointer; }
+
+#login_btn:hover {
+  background-color: #e40c57; }
+
+.form_act {
+  margin-top: 20px;
+  font-size: 14px;
+  margin-left: 20px; }
+
+.form_buttom {
+  height: 35px;
+  line-height: 35px;
+  background-color: #efefef;
+  margin-top: 26px;
+  font-size: 12px;
+  text-indent: 200px; }
+
+.form_buttom a {
+  color: #000; }
+
+.form_buttom b {
+  border: 1px solid #CCCCCC;
+  background-color: #fff;
+  font-weight: 100;
+  margin-left: 5px; }
+
+.form_buttom b:hover {
+  background-color: #efefef;
+  color: #e40c57; }
