@@ -98,6 +98,14 @@ input,a{
 .card-container-list ul{
 	display: flex;
 }
+.card-item-list-sp{
+	width:349px;
+	text-align: center;
+}
+.card-item-list-cz{
+	width:250px;
+	text-align: center;
+}
 .card-container-list .card-item{
 	margin-top:15px;
 	height:105px;
@@ -106,13 +114,66 @@ input,a{
 	border-bottom: 1px solid #ececec;
 	text-align: center;
 }
-.card-item .card-item-list{
+.card-item-list{
 	width:100px;
+	text-align: center;
 }
 .card-item .card-pic{
 	width:80px;
 	height:80px;
 	margin-left: 85px;
 	margin-right:85px;
+}
+.card-item .card-pic img{
+	width:80px;
+	height:80px;
+}
+.prouduct-sort-show-buy .p-quantity{
+	display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+.prouduct-sort-show-buy .p-quantity a{
+	display: inline-block;
+    width: 20px;
+    height: 21px;
+    vertical-align: middle;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+}
+.prouduct-sort-show-buy .p-quantity input{
+	width: 30px;
+    height: 19px;
+    line-height:19px;
+   	border: 1px solid #a9a9a9;
+    text-align:center;
+}
+.prouduct-sort-show-buy .p-quantity p a{
+	border:0;
+	width:92px;
+	height:23px;
+	line-height: 23px;
+	background-color: #861185;
+	font-size: 14px;
+	color:#fff;
+}
+.card-item-list-action{
+	width:250px;
+	text-align: center;
+}
+
+.card-item-list-action a{
+	margin-bottom: 5px;
+	color: #026eb7;
+}
+.card-item-list-action a:hover{
+	text-decoration: underline;
+} 
+.card-goods-total{
+	float:right;
+	height:50px;
+	width:300px;
+	font-size:24px ;
 	background-color: red;
+	line-height: 50px;
 }

@@ -204,6 +204,9 @@ input,a{
 	font-size: 14px;
 	color:#fff;
 }
+.prouduct-sort-show-buy .p-quantity p a:hover{
+	background-color :red;
+}
 .prouduct-sort-show-buy .p-quantity input{
 	width: 30px;
     height: 19px;

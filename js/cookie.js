@@ -19,3 +19,47 @@ function getCookie(name) {
 function removeCookie(name) {
 	setCookie(name, 1, -1);
 }
+
+
+
+		function add(data){
+		 			console.log(data)
+		 			var a = $(data).attr("data-id")
+		 			console.log(a);
+		 			var $input = $(data).prev("input");
+		 			var	$count = parseInt($input.val())+1;
+		 			$input.val($count );
+		 			var $obj = JSON.parse(getCookie("cart"));
+		 			console.log($count)
+		 			$obj[a] = $count;
+		 			setCookie("cart",JSON.stringify($obj),7)
+		 			var $price = $(data).parent().parent().parent().parent().find(".price").html()
+		 			console.log($price)
+		 			var $sumPrice = $(data).parent().parent().parent().parent().find(".sum-price");
+		 			var $sumTotal = $count*($price.substring(1));
+		 			$sumPrice.html("￥"+$sumTotal+".00");
+		 	};
+		 	
+		 	
+
+		function decrease(data){
+			var a = $(data).attr("data-id");
+			var $input = $(data).prev("input");
+		 	var	$count = parseInt($input.val())-1;
+		 	$input.val($count);
+		 		//$obj[$perCount] = $count;
+		 	var $obj = JSON.parse(getCookie("cart"));
+		 	$obj[a] = $count;
+		 	setCookie("cart",JSON.stringify($obj),7);
+		 	var $price = $(data).parent().parent().parent().parent().find(".price").html()
+		 	console.log($price)
+		 	var $sumPrice = $(data).parent().parent().parent().parent().find(".sum-price");
+		 	var $sumTotal = $count*($price.substring(1));
+		 	
+		 	
+		 	
+		 		 
+		 		
+		 		$sumPrice.html("￥"+$sumTotal+".00");
+		 	
+		}
