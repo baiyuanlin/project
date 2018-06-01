@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/prouduct-id.css"/>
+	</head>
+	<body>
+		<div>
+		 	<iframe src="head.html"width="100%"style="margin: 0; padding: 0;height:162px;"></iframe>
+		 </div>
+		 
+		 
+		 
+		 <div class="prouduct-det-wrap">
+		 	<div class="prouduct-title-wrap">
+		 		<div class="prouduct-title-wz">
+		 			<p>您当前的位置：护肤<span>></span><span>洁面   洁面膏/霜 > Vikos 深层净肌卸妆膏 100ml</span></p>
+		 		</div>
+		 	</div>
+		 	
+		 	<div class="prouduct-det-main-wrap">
+		 		<div class="prouduct-det-main">
+		 		
+		 		</div>
+		 </div>
+		 
+		 
+		 
+		 <div>
+		 	<iframe src="footer.html"width="100%"style="margin: 0; padding: 0;height:390px;border:none;"></iframe>
+		 </div>
+		 
+		 <script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		  <script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript">
+		 	var data = {
+		 		"10001":{
+		 			id:10001,
+		 			good_name:"Vikos 深层净肌卸妆膏 100ml",
+		 			img:"prouduct-1.jpg",
+		 			price: "￥59.00",
+		 			info_dec:"卸妆不到毛孔？保养再贵，然并卵！韩国【毛孔级】卸妆膏，让毛孔深呼吸！洗的干干净净，温和舒缓不伤肤！料体延展性强，每次只要豌豆大小就能洗净！"},
+		 		"10002":{
+		 			id:10002,
+		 			good_name:"伊丽莎白雅顿（双效）洁肤露 150ML",
+		 			img:"prouduct-2.jpg",price: "￥98.00",
+		 			info_dec:"主要成分包括鼠尾草，迷迭香以及金缕梅，能够清洁脸上脏物、油光，给肌肤补充维他命C。让肌肤毛孔看起来更清洁、明亮、健康，洁肤爽肤二合一！！"},
+		 		"10003":{
+		 			id:10003,
+		 			good_name:"博姿(Boots)小黄瓜卸妆洁面乳 150ml",
+		 			img:"prouduct-3.jpg",
+		 			price: "￥25.00",
+		 			info_dec:"部分瓶身字休会有轻微磨损"},
+		 		"10004":{
+		 			id:10004,
+		 			good_name:"雅诗兰黛(Estee Lauder)红石榴洁面乳 125ml",
+		 			img:"prouduct-4.jpg",
+		 			price: "￥199.00",
+		 			info_dec:"泡沫丰富，不含皂质，保持肌肤PH值平衡，每一次洁面，都如享受滋养和舒缓的专业护理。"},
+		 		"10005":{
+		 			id:10005,
+		 			good_name:"科颜氏 (Kiehl’s)高保湿洁面啫喱 150ml 清爽款",
+		 			img:"prouduct-5.jpg",
+		 			price: "￥170.00",
+		 			info_dec:"不含油脂的温和洁净配方，含澳洲白茅、冰河醣蛋白及柠檬萃取，清洁同时保湿。细致的啫喱质地，洗后肌肤清爽不干涩。"},
+		 		"10006":{
+		 			id:10006,
+		 			good_name:"博姿 Boot 小黄瓜洗面奶150ml",
+		 			img:"prouduct-6.jpg",
+		 			price: "￥39.00",
+		 			info_dec:"黄瓜富含蛋白质、糖类、维生素B2、维生素C、维生素E、胡萝卜素、尼克酸、钙、磷、铁等营养成分，同时黄瓜还含有丙醇二酸、葫芦素！"},
+		 		"10007":{
+		 			id:10007,
+		 			good_name:"可莱丝（CLINIE）胶原蛋白洗面奶 170ml",
+		 			img:"prouduct-7.jpg",
+		 			price: "￥48.00",
+		 			info_dec:"年轻不重视洁面，老了就真无法补救了！可莱丝（CLINIE)胶原蛋白洗面奶，洁面从此变成美肤。"},
+		 		"10008":{
+		 			id:10008,
+		 			good_name:"兰蔻 (Lancome) 温和柔肤泡沫洁面乳125ml 粉",
+		 			img:"prouduct-8.jpg",
+		 			price: "￥199.00",
+		 			info_dec:"泡沫的质地能温和的清洁肌肤，洗去脸部彩妆及不洁物，同时不刺激肌肤，给予肌肤舒适的感觉。"},
+		 		"10009":{
+		 			id:10009,
+		 			good_name:"兰芝 多效四合一多功能洗面奶 30ml 中样",
+		 			img:"prouduct-9.jpg",
+		 			price: "￥39.00",
+		 			info_dec:"100μm微纤维素颗粒分裂成细小粒子，彻底清除 彩妆残留来自5种水果的AHA复合体，去除污垢同时可以用来卸除眼唇部彩妆。"}}
+		 	$(function(){
+		 		var str = location.search;
+		 		console.log(str);
+		 		var idindex = str.split("=")[1];
+		 		console.log(idindex);
+		 		var str1 = "";
+		 		for(var attr in data){
+		 			str1 = `
+		 					<div class="prouduct-det-main">
+		 		<div class="prouduct-det-main-pic">
+		 			<div id="box">
+						<img src="img/${data[idindex].img}" />
+						<div id="fdj"></div>
+					</div>
+					<div id="fd">
+						<img src="img/prouduct-1.jpg" />
+					</div>
+					<div id="spic">
+						<ul id="imgs">
+							<li><img src="img/prouduct-1.jpg"/></li>
+							<li><img src="img/prouduct-1.jpg"/></li>
+							<li><img src="img/prouduct-1.jpg"/></li>
+							<li><img src="img/prouduct-1.jpg"/></li>
+						</ul>
+					</div>
+		 		</div>
+		 		<div class="prouduct-det-main-wz">
+		 			<div class="prouduct-det-main-title">
+		 				<h2>
+		 					<b>[国际直邮]</b>
+		 					<span>${data[idindex].good_name}</span>
+		 					<p>${data[idindex].info_dec}</p>
+		 				</h2>
+		 			</div>
+		 			<div class="prouduct-det-info">
+		 				<div class="prouduct-det-con">
+		 					<ul>
+		 						<li class="item">
+		 							<span class="label">销售价：</span>
+		 							<span class="detail">
+           								<b class="price"><ins class="action-price">${data[idindex].price}</ins></b>		          
+        							</span>
+		 						</li>
+		 					</ul>
+		 				</div>
+		 				
+		 				<div class="prouduct-sort-show-buy">
+		 					<span class="p-quantity">数量：
+            				<a href="javascript:void(0);" class="btn-decrease">-</a>
+            				<input type="text" size="2" name="goods[num]" class="action-quantity-input" value="1">
+            				<a href="javascript:void(0);" class="btn-increase">+</a>
+            				<p>
+                        		<a class="btn-card " data-id="${data[idindex].id}" href="javascript:void(0)">
+                        			<span>加入购物车</span>
+                        		</a>
+                        		<a class="into-card" href="shop-card.html">
+                        			<span>进入购物车</span>
+                        		</a>
+                        	</p>
+            			</div>		
+		 			</div>
+		 		</div>
+		 		</div>`
+		 			
+		 		}
+		 		$(".prouduct-det-main").html(str1);
+		 		
+		 		//减少数量
+		 		$(".btn-decrease").click(function(){
+		 			var $input = $(this).next("input");
+		 			var	$count = parseInt($input.val())-1;
+		 			if($input.val() > 1){
+		 				 $input.val($count);	
+		 			}
+		 		})
+		 		//增加数量
+		 		$(".btn-increase").click(function(){
+		 			var $input = $(this).prev("input");
+		 			var	$count = parseInt($input.val())+1;
+		 				 $input.val($count);
+		 			
+		 		})
+		 		//加入购物车，存入coookie
+		 		$(".btn-card").click(function(){
+		 			var $inputVal = $(this).parents(".p-quantity").find(".action-quantity-input").val();
+		 			var $prouductId = this.getAttribute("data-id");
+		 			console.log($prouductId);
+		 			if(getCookie("cart")!==undefined){
+						var obj = JSON.parse(getCookie("cart"))
+					}else{
+						var obj = {};
+					};
+					obj[$prouductId] = $inputVal;
+					var $objTostr = JSON.stringify(obj)
+					setCookie("cart",$objTostr,7)
+
+		 		})
+		 		
+		 	})
+		 	
+		 	
+		 
+		 </script>
+		 
+	</body>
+</html>

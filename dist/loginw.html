@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<body>
+		<div>
+		 	<iframe src="head.html"width="100%"style="margin: 0; padding: 0;height:162px;"></iframe>
+		 </div>
+		 
+		 
+		 <!--登录-->
+		<div class="siginW">
+			<div class="sigin_logo">
+					
+			</div>
+			<div class="sigin">
+				<h2 class="sigin_title">用户登录</h2>
+				<div class="formW">
+					<form action="" method="post">
+						<p>
+							<input type="text" id="phone" placeholder="手机号"/>
+							<span class="tipText">
+		 						
+							</span>
+						</p>
+						<p>
+							<input type="password" id="password" placeholder="填写密码"/>
+							<span class="tipText">
+		 						
+							</span>
+						</p>
+					</form>
+				</div>
+				<div class="sigin_trust">
+					<a href="#" ><img src="img/weixin.png"/></a>
+					<a href="#" ><img src="img/weibo.png"/></a>
+					<a href="#" ><img src="img/qqlogin.png"/></a>
+				</div>
+				
+				<input type="submit" id="login_btn" value="登    录" />
+				<div class="form_act">
+					<input type="checkbox" name="is_remember" id="for_remember" class="x-check action-remember-account" checked="checked">
+					<label for="for_remember" class="form-sub-label">记住帐号</label>
+					<input type="checkbox" name="site_autologin" id="for_auto_signin" class="x-check action-auto-signin">
+					<label for="for_auto_signin" class="form-sub-label">两周内自动登录</label>
+				</div>
+				<div class="form_buttom">
+					<a href="#"><b>  忘记密码   </b></a>
+					<a href="signup.html"><b>  免费注册   </b></a>
+				</div>
+			</div>
+			
+			
+		 <div>
+		 	<iframe src="footer.html"width="100%"style="margin: 0; padding: 0;height:390px;border:none;"></iframe>
+		 </div>
+		 
+		 
+		 <script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript">
+		 	$(function(){
+		 		$("input").eq(0).blur(function(){
+		 			if($("input").eq(0).val().length !=0){
+		 				$("input").eq(0).next().text("");
+		 			}
+		 		})
+		 		$("input").eq(1).blur(function(){
+		 			if($("input").eq(1).val().length !=0){
+		 				$("input").eq(1).next().text("");
+		 			}
+		 		})
+		 		
+		 		
+		 		$("#login_btn").click(function(){
+		 			if($("input").eq(0).val().length ==0){
+		 				$("input").eq(0).next().text("手机号不能为空");
+		 			}else{
+		 				$("input").eq(0).next().text("");
+		 			}
+		 			if($("input").eq(1).val().length ==0){
+		 				$("input").eq(1).next().text("密码不能为空");
+		 			}else{
+		 				$("input").eq(1).next().text("");
+		 			}	
+		 			$.post("http://h6.duchengjiu.top/shop/api_user.php",{
+		 				status:"login",
+		 				username:$("#phone").val(),
+		 				password:$("#password").val(),	
+		 			},function(data){
+		 				//console.log(data)
+		 				if(data.code!=0){
+		 					alert(data.message)
+		 				}else{
+		 					alert("恭喜你！登录成功")
+		 					location.assign("index.html")
+		 				}
+		 			})
+		 			return false;
+		 		})
+		 		
+		 	})
+		 </script
+	</body>
+</html>

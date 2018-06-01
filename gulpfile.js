@@ -1,17 +1,22 @@
  var gulp = require('gulp');
  gulp.task('hello',function(){ //第一个参数是任务名称，第二个参数是任务功能
  	console.log('hello world!');
-
  })
  
  
  
   var gulp =require('gulp'); 
-gulp.task('copy-index',function(){ 
+gulp.task('copy-html',function(){ 
 	//gulp.src()找到我们的index.html然后使用.pipe()通道 
 	//gulp.dest()发布拷贝 
-	return gulp.src('index.html').pipe(gulp.dest('dist'));
+	return gulp.src('*.html').pipe(gulp.dest('dist'));
  });
+ 
+gulp.task("js",function(){
+	gulp.src(["js/*.js"]).pipe(gulp.dest("dist/js"));
+}) 
+ 
+ 
  
  var gulp = require('gulp'); 
 
