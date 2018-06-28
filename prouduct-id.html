@@ -9,28 +9,28 @@
 		<div>
 		 	<iframe src="head.html"width="100%"style="margin: 0; padding: 0;height:162px;"></iframe>
 		 </div>
-		 
-		 
-		 
+
+
+
 		 <div class="prouduct-det-wrap">
 		 	<div class="prouduct-title-wrap">
 		 		<div class="prouduct-title-wz">
 		 			<p>您当前的位置：护肤<span>></span><span>洁面   洁面膏/霜 > Vikos 深层净肌卸妆膏 100ml</span></p>
 		 		</div>
 		 	</div>
-		 	
+
 		 	<div class="prouduct-det-main-wrap">
 		 		<div class="prouduct-det-main">
-		 		
+
 		 		</div>
 		 </div>
-		 
-		 
-		 
+
+
+
 		 <div>
 		 	<iframe src="footer.html"width="100%"style="margin: 0; padding: 0;height:390px;border:none;"></iframe>
 		 </div>
-		 
+
 		 <script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		  <script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 		 <script type="text/javascript">
@@ -128,12 +128,12 @@
 		 						<li class="item">
 		 							<span class="label">销售价：</span>
 		 							<span class="detail">
-           								<b class="price"><ins class="action-price">${data[idindex].price}</ins></b>		          
+           								<b class="price"><ins class="action-price">${data[idindex].price}</ins></b>
         							</span>
 		 						</li>
 		 					</ul>
 		 				</div>
-		 				
+
 		 				<div class="prouduct-sort-show-buy">
 		 					<span class="p-quantity">数量：
             				<a href="javascript:void(0);" class="btn-decrease">-</a>
@@ -147,20 +147,20 @@
                         			<span>进入购物车</span>
                         		</a>
                         	</p>
-            			</div>		
+            			</div>
 		 			</div>
 		 		</div>
 		 		</div>`
-		 			
+
 		 		}
 		 		$(".prouduct-det-main").html(str1);
-		 		
+
 		 		//减少数量
 		 		$(".btn-decrease").click(function(){
 		 			var $input = $(this).next("input");
 		 			var	$count = parseInt($input.val())-1;
 		 			if($input.val() > 1){
-		 				 $input.val($count);	
+		 				 $input.val($count);
 		 			}
 		 		})
 		 		//增加数量
@@ -168,7 +168,7 @@
 		 			var $input = $(this).prev("input");
 		 			var	$count = parseInt($input.val())+1;
 		 				 $input.val($count);
-		 			
+
 		 		})
 		 		//加入购物车，存入coookie
 		 		$(".btn-card").click(function(){
@@ -185,12 +185,12 @@
 					setCookie("cart",$objTostr,7)
 
 		 		})
-		 		
+
 		 	})
-		 	
-		 	
-		 
+
+
+
 		 </script>
-		 
+
 	</body>
 </html>

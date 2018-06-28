@@ -1,4 +1,4 @@
-body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,span,input,a{
 	margin:0; 
 	padding:0;
 }
@@ -52,7 +52,7 @@ input,a{
 }
 .card-step ul li span{
 	width:22px;
- 	text-align:center;
+ 	text-align: center;
 	display: inline-block;
 	border-radius: 50%;
 	color:#fff;
@@ -68,7 +68,7 @@ input,a{
 }
  .card-step ul .card-step-item1 span{
  	width:22px;
- 	text-align:center;
+ 	text-align: center;
 	display: inline-block;
 	border-radius: 50%;
 	color:#faa419;
@@ -100,7 +100,7 @@ input,a{
 }
 .card-item-list-sp{
 	width:349px;
-	text-align: center;
+	text-align:center;
 }
 .card-item-list-cz{
 	width:250px;
@@ -116,7 +116,10 @@ input,a{
 }
 .card-item-list{
 	width:100px;
-	text-align: center;
+	text-align:center;
+}
+.card-item-list .sum-price b {
+	font-weight: 100;
 }
 .card-item .card-pic{
 	width:80px;
@@ -132,21 +135,23 @@ input,a{
 	display: inline-block;
     margin-right: 8px;
     position: relative;
+    border-left: 0;
+    border-right: 0;
 }
 .prouduct-sort-show-buy .p-quantity a{
 	display: inline-block;
     width: 20px;
-    height: 21px;
+    height: 19px;
     vertical-align: middle;
     border: 1px solid #a9a9a9;
-    text-align: center;
+    text-align:center;
 }
 .prouduct-sort-show-buy .p-quantity input{
-	width: 30px;
+	width: 32px;
     height: 19px;
     line-height:19px;
    	border: 1px solid #a9a9a9;
-    text-align:center;
+    text-align:center;     
 }
 .prouduct-sort-show-buy .p-quantity p a{
 	border:0;
@@ -154,6 +159,8 @@ input,a{
 	height:23px;
 	line-height: 23px;
 	background-color: #861185;
+	border-left:0;
+    border-right:0;
 	font-size: 14px;
 	color:#fff;
 }

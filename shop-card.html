@@ -64,54 +64,54 @@
 		 			id:10001,
 		 			good_name:"Vikos 深层净肌卸妆膏 100ml",
 		 			img:"prouduct-1.jpg",
-		 			price: "￥59.00",
+		 			price: "59.00",
 		 			info_dec:"卸妆不到毛孔？保养再贵，然并卵！韩国【毛孔级】卸妆膏，让毛孔深呼吸！洗的干干净净，温和舒缓不伤肤！料体延展性强，每次只要豌豆大小就能洗净！"},
 		 		"10002":{
 		 			id:10002,
 		 			good_name:"伊丽莎白雅顿（双效）洁肤露 150ML",
-		 			img:"prouduct-2.jpg",price: "￥98.00",
+		 			img:"prouduct-2.jpg",price: "98.00",
 		 			info_dec:"主要成分包括鼠尾草，迷迭香以及金缕梅，能够清洁脸上脏物、油光，给肌肤补充维他命C。让肌肤毛孔看起来更清洁、明亮、健康，洁肤爽肤二合一！！"},
 		 		"10003":{
 		 			id:10003,
 		 			good_name:"博姿(Boots)小黄瓜卸妆洁面乳 150ml",
 		 			img:"prouduct-3.jpg",
-		 			price: "￥25.00",
+		 			price: "25.00",
 		 			info_dec:"部分瓶身字休会有轻微磨损"},
 		 		"10004":{
 		 			id:10004,
 		 			good_name:"雅诗兰黛(Estee Lauder)红石榴洁面乳 125ml",
 		 			img:"prouduct-4.jpg",
-		 			price: "￥199.00",
+		 			price: "199.00",
 		 			info_dec:"泡沫丰富，不含皂质，保持肌肤PH值平衡，每一次洁面，都如享受滋养和舒缓的专业护理。"},
 		 		"10005":{
 		 			id:10005,
 		 			good_name:"科颜氏 (Kiehl’s)高保湿洁面啫喱 150ml 清爽款",
 		 			img:"prouduct-5.jpg",
-		 			price: "￥170.00",
+		 			price: "170.00",
 		 			info_dec:"不含油脂的温和洁净配方，含澳洲白茅、冰河醣蛋白及柠檬萃取，清洁同时保湿。细致的啫喱质地，洗后肌肤清爽不干涩。"},
 		 		"10006":{
 		 			id:10006,
 		 			good_name:"博姿 Boot 小黄瓜洗面奶150ml",
 		 			img:"prouduct-6.jpg",
-		 			price: "￥39.00",
+		 			price: "39.00",
 		 			info_dec:"黄瓜富含蛋白质、糖类、维生素B2、维生素C、维生素E、胡萝卜素、尼克酸、钙、磷、铁等营养成分，同时黄瓜还含有丙醇二酸、葫芦素！"},
 		 		"10007":{
 		 			id:10007,
 		 			good_name:"可莱丝（CLINIE）胶原蛋白洗面奶 170ml",
 		 			img:"prouduct-7.jpg",
-		 			price: "￥48.00",
+		 			price: "48.00",
 		 			info_dec:"年轻不重视洁面，老了就真无法补救了！可莱丝（CLINIE)胶原蛋白洗面奶，洁面从此变成美肤。"},
 		 		"10008":{
 		 			id:10008,
 		 			good_name:"兰蔻 (Lancome) 温和柔肤泡沫洁面乳125ml 粉",
 		 			img:"prouduct-8.jpg",
-		 			price: "￥199.00",
+		 			price: "199.00",
 		 			info_dec:"泡沫的质地能温和的清洁肌肤，洗去脸部彩妆及不洁物，同时不刺激肌肤，给予肌肤舒适的感觉。"},
 		 		"10009":{
 		 			id:10009,
 		 			good_name:"兰芝 多效四合一多功能洗面奶 30ml 中样",
 		 			img:"prouduct-9.jpg",
-		 			price: "￥39.00",
+		 			price: "39.00",
 		 			info_dec:"100μm微纤维素颗粒分裂成细小粒子，彻底清除 彩妆残留来自5种水果的AHA复合体，去除污垢同时可以用来卸除眼唇部彩妆。"}}
 		 	$(function(){
 		 		//取cookie
@@ -120,8 +120,10 @@
 		 			$(".card-goods").html("<a href='prouduct.html'>您逛了半天购物车空空如也，赶快去添加吧！</a>")
 		 		}else{
 		 			var $obj = JSON.parse(getCookie("cart"));
-		 			console.log($obj)
+		 			console.log($obj);
 		 		}
+		 		
+		 		
 		 		for(var attr in data){
 		 			for(var objIndex in $obj){
 		 				if(objIndex == attr ){
@@ -146,13 +148,13 @@
 		 						</div>
 		 					</li>
 		 					<li class="card-item-list">
-		 						<span class = "price" >${data[attr].price}</span>
+		 						￥<span class = "price" >${data[attr].price}</span>
 		 					</li>
 		 					<li class="card-item-list">
 		 						<div class="prouduct-sort-show-buy">
 		 							<span class="p-quantity">
             							<a href="javascript:void(0);" class="btn-decrease"data-id = "${objIndex}" onclick="decrease(this)">-</a>
-            							<input type="text" size="2" name="goods[num]" class="action-quantity-input" value="${$obj[objIndex]}">
+            							<input type="text" size="2" name="goods[num]" class="action-quantity-input" value="${$obj[objIndex]}" readonly = "readonly">
             							<a href="javascript:void(0);" class="btn-increase" data-id = "${objIndex}" onclick="add(this)">+</a>
             					</div>		
 		 					</li>
@@ -163,7 +165,7 @@
 		 						-
 		 					</li>
 		 					<li class="card-item-list">
-		 						<span class = "sum-price" ></span>
+		 						<span class = "sum-price" ><b>￥</b>${data[objIndex].price*$obj[objIndex]}<b>.00</b></span>
 		 					</li>
 		 					<li class="card-item-list-action">
 		 						<span><a href="javascript:void(0)">收藏&nbsp;</a>|</span>
@@ -171,59 +173,16 @@
 		 					</li>
 		 				</ul>`
 		 				}
-		 			}$(".card-goods").html(str);
-		 			
+		 			}
+		 			$(".card-goods").html(str);	
 		 		}
 		 		
-		 		//减少数量
-		 		
-//		 		$(".btn-decrease").click(function(){
-//		 			var $input = $(this).next("input");
-//		 			var	$count = parseInt($input.val())-1;
-//		 			var $perCount = this.getAttribute("data-id");
-//		 			var $obj = JSON.parse(getCookie("cart"));
-//		 			console.log($count);
-//		 			var $price = $(this).parents(".card-item").find(".price").html();
-//		 			console.log($price)
-//		 			var $sumPrice = $(this).parents(".card-goods").find(".sum-price");
-//		 			var $sumTotal = $count*parseInt($price.substring(1));
-//		 			console.log($sumTotal)
-//		 			
-//		 			
-//		 			if($input.val() > 1){
-//		 				 $input.val($count);
-//		 				 $obj[$perCount] = $count;
-//		 				 setCookie("cart",JSON.stringify($obj),7);
-//		 				 $sumPrice.html("￥"+$sumTotal+".00");
-//		 			}
-//		 		})
-		 		//增加数量
-//		 		function add(){
-//		 			console.log("aa")
-////		 			$(".btn-increase").click(function(){
-//		 			var $input = $(this).prev("input");
-//		 			var	$count = parseInt($input.val())+1;
-////		 			console.log($count);
-//					var $perCount = this.getAttribute("data-id");
-//		 			var $obj = JSON.parse(getCookie("cart"));
-//		 			$obj[$perCount] = $count;
-//		 			//console.log($perCount);
-//		 			//console.log($obj)
-//		 			setCookie("cart",JSON.stringify($obj),7)
-//		 			$input.val($count);
-//		 			var $price = $(this).parents(".card-goods").find(".price").html();
-//		 			var $sumPrice = $(this).parents(".card-goods").find(".sum-price");
-//		 			var $sumTotal = $count*($price.substring(1));
-//		 			$sumPrice.html("￥"+$sumTotal+".00");
-//		 			
-////		 		})
-//		 		}
 		 		
 		 		//移除商品
 		 		$(".btn-del").click(function(){
 		 			var $cardItem = $(this).parents(".card-item");
 		 			var $preId = this.getAttribute("data-id")
-		 			delete $obj[$preId]
+		 			delete $obj[$preId];
 		 			$cardItem.remove();
 		 			console.log("aa");
 		 			setCookie("cart",JSON.stringify($obj),7)

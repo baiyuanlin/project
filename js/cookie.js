@@ -20,10 +20,9 @@ function removeCookie(name) {
 	setCookie(name, 1, -1);
 }
 
-
 //数量+封装
 function add(data){
-	var $perID = $(data).attr("data-id")
+	var $perID = $(data).attr("data-id");
 	var $input = $(data).prev("input");
 	var	$count = parseInt($input.val())+1;
 	$input.val($count );
@@ -32,7 +31,7 @@ function add(data){
 	setCookie("cart",JSON.stringify($obj),7)
 	var $price = $(data).parent().parent().parent().parent().find(".price").html()
 	var $sumPrice = $(data).parent().parent().parent().parent().find(".sum-price");
-	var $sumTotal = $count*($price.substring(1));
+	var $sumTotal = $count*$price;
 	$sumPrice.html("￥"+$sumTotal+".00");
 };
 		 	
@@ -52,11 +51,11 @@ function decrease(data){
 		var $price = $(data).parent().parent().parent().parent().find(".price").html()
 		var $sumPrice = $(data).parent().parent().parent().parent().find(".sum-price");
 		console.log($sumPrice)
-		var $sumTotal = $count*($price.substring(1));
+		var $sumTotal = $count*$price;
 		$sumPrice.html("￥"+$sumTotal+".00");
-	}
-			 	
+	}		 	
 }
+
 //小计封装
 //window.onload = function sumTotal(data){
 //	console.log(data);
